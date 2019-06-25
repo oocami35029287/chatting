@@ -1,0 +1,70 @@
+.background {
+    -fx-background-color: #FEFFEA;
+}
+
+#backButton {
+    -fx-background-color: #FEFFEA;
+    -fx-background-radius: 0;
+    -fx-font-family: "Verdana";
+    -fx-text-fill: black;
+    -fx-font-size: 15pt;
+    -fx-background-radius: 30;
+}
+#backButton:hover{
+    -fx-background-color:#F3F3BD;
+}
+#sentButton {
+    -fx-background-color:#FEFFEA;
+        
+    -fx-font-family: "Verdana";
+    -fx-font-smoothing-type: lcd;
+    -fx-fill: white;
+    -fx-font-size: 11pt;
+    -fx-background-radius: 30;
+}
+#sentButton:hover{
+    -fx-background-color:#F3F3BD;
+}
+#chattingPane{
+    -fx-background: rgb(47, 235, 219);
+    -fx-background-color: #F3F3BD;
+}
+
+#nameLabel{
+    -fx-text-fill: black;
+    
+}
+#TypeTextArea{
+    -fx-text-box-border: transparent; -fx-background-color: transparent;
+    -fx-background: #F3F3BD;
+    -fx-background-color: #F3F3BD;
+    -fx-background-insets: 0;
+    -fx-control-inner-background: #F3F3BD;
+}
+.TextField{
+    -fx-background: #F3F3BD;
+    -fx-background-color: #F3F3BD;
+    -fx-background-insets: 0;
+    -fx-control-inner-background: #F3F3BD;
+    -fx-border-width: -1;
+    
+}
+.Button {
+    -fx-background-color: #FEFFEA;
+    -fx-background-radius: 0;
+    -fx-font-family: "Verdana";
+    -fx-text-fill: black;
+    -fx-font-size: 15pt;
+    -fx-background-radius: 30;
+}
+.Button:hover{
+    -fx-background-color:#F3F3BD;
+}
+.ListView{
+    -fx-background-color: #FEFFEA; 
+    -fx-text-fill: black  ;
+    -fx-font-size: 24px; 
+}
+.ListView.hover{
+    -fx-background-color: #F3F3BD; 
+}

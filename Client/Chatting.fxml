@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="background" stylesheets="@Chatting1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChattingController">
+   <bottom>
+      <GridPane prefHeight="50.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="77.79998779296875" minWidth="10.0" prefWidth="46.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="77.79998779296875" minWidth="10.0" prefWidth="46.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="TypeTextArea" onKeyPressed="#enterPressed" prefHeight="36.0" prefWidth="245.0" />
+            <Button fx:id="trigger" mnemonicParsing="false" onAction="#triggerAction" opacity="0.0" prefHeight="8.0" prefWidth="0.0" text="T" />
+            <AnchorPane GridPane.columnIndex="2">
+               <children>
+                  <Button fx:id="sentButton" graphicTextGap="0.0" layoutX="59.0" layoutY="14.0" mnemonicParsing="false" onAction="#sentButtonPressed" prefHeight="47.0" prefWidth="42.0" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="8.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="Button">
+                           <image>
+                              <Image url="@icon/sent.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="1">
+               <children>
+                  <Button fx:id="fileButton" graphicTextGap="0.0" layoutX="59.0" layoutY="14.0" mnemonicParsing="false" onAction="#fileButtonPressed" prefHeight="47.0" prefWidth="42.0" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="8.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="Button">
+                           <image>
+                              <Image url="@icon/file.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </GridPane>
+   </bottom>
+   <top>
+      <GridPane prefHeight="47.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.20001220703125" minWidth="10.0" prefWidth="44.39999771118164" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="222.60000228881836" minWidth="153.79998779296875" prefWidth="222.60000228881836" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="nameLabel" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#back" prefHeight="51.0" prefWidth="46.0" text="&lt;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="8.0">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </opaqueInsets>
+      </GridPane>
+   </top>
+   <center>
+      <ScrollPane fx:id="chattingPane" hbarPolicy="NEVER" prefHeight="457.0" prefWidth="303.0" vbarPolicy="ALWAYS" vvalue="1.0" BorderPane.alignment="CENTER" />
+   </center>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</BorderPane>

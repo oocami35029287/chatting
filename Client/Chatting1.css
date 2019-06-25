@@ -1,0 +1,38 @@
+.background {
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(to right bottom, rgba(58,65,180,0.7066176812521884) 0%, rgba(187,45,111,0.6561975131849616) 34%, rgba(253,29,29,0.7346288857339811) 50%, rgba(252,228,69,0.7234244039412641) 100%);
+}
+
+#backButton {
+    -fx-background-color:
+        rgba(226, 11, 11, 0.38), rgba(31, 136, 197, 0.8),
+        linear-gradient(#5e0699 20%, #e61c09 100%),
+        linear-gradient(#2515b4, #db76b9);
+    -fx-background-radius: 25;
+    -fx-font-size: 15pt;
+    -fx-font-family: "Verdana";
+    -fx-text-fill: blue;
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+}
+
+#sentButton {
+    -fx-background-color:
+        rgba(226, 11, 11, 0.38), rgba(31, 136, 197, 0.8),
+        linear-gradient(#5e0699 20%, #e61c09 100%),
+        linear-gradient(#2515b4, #db76b9);
+        
+    -fx-font-family: "Verdana";
+    -fx-text-fill: white;
+    -fx-background-radius: 25;
+}
+
+
+#TypeTextArea{
+    -fx-background-color:
+        rgb(255,255,255,0.3), 
+        linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.8) 50%), rgb(218,226,224);
+    
+    -fx-effect: innershadow(gaussian, rgb(0,0,0,0.8), 5, 0, 0, 2);
+    -fx-font-family: "Verdana";
+}
